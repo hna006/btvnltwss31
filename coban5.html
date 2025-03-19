@@ -1,22 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>baitap05</title>
     <style>
-
+        th {
+            padding: 10px;
+        }
+        td{
+            padding: 10px;
+        }
+        table{
+            width: 285px;
+        }
     </style>
 </head>
 <body>
-    <table border="1">
+    <h1>Danh sách nhân viên</h1>
+    <table class="container" border="1">
         <thead>
             <tr>
                 <th>STT</th>
-                <th>NAME</th>
-                <th>AGE</th>
-                <th>ADDRESS</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
             </tr>
         </thead>
         <tbody id="tbody">
@@ -36,29 +44,35 @@
       
     </table>
     <script>
-        const empoly  =[
+        const employees = [
             {
-                id : 1,
-                name : "exam1",
-                age:"18",
-                address:"ha noi",
+                id: 1,
+                name: "Đạt",
+                age: 10,
+                address: "District",
             },
             {
-                id : 2,
-                name : "exam3",
-                age:"18",
-                address:"ha hoi",
-            }
+                id: 2,
+                name: "Đạt",
+                age: 11,
+                address: "District",
+            },
+            {
+                id: 3,
+                name: "Đạt",
+                age: 12,
+                address: "District",
+            },
         ];
         function show (){
             let str = "";
-            for(i=0;i<empoly.length;i++) {
+            for(i=0;i<employees.length;i++) {
                 str+=
                 `<tr>
-                    <td>${empoly[i].id}</td>
-                    <td>${empoly[i].name}</td>
-                    <td>${empoly[i].age}</td>
-                    <td>${empoly[i].address}</td>
+                    <td>${employees[i].id}</td>
+                    <td>${employees[i].name}</td>
+                    <td>${employees[i].age}</td>
+                    <td>${employees[i].address}</td>
                 </tr>`;
                 
             }
