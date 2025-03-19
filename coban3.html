@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: inline-block;
+        }
+        .main{
+            justify-content: center;
+        }
+        .main1{
+            padding: 30px;
+            background-color: green;
+            border-radius: 10px;
+            border-color: green;
+        }
+        .main2{
+            padding: 30px;
+            background-color: red;
+            border-radius: 10px;
+            border-color: red;
+        }
+        .main3{
+            padding: 30px;
+            background-color: violet;
+            border-radius: 10px;
+            border-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <p> Change background-color</p>
+            <p>Mouse click</p>
+        <div class="main">
+            <button class="main1" onclick="bgrgreen()">Xanh</button>
+            <button class="main2" onclick="bgrred()">Đỏ </button>
+            <button class="main3" onclick="bgrviolet()">Tím </button>
+        </div>
+    </div>  
+    <script>
+        function bgrgreen() {
+            document.getElementsByClassName("container")[0].style.backgroundColor = "green";
+        }
+        function bgrred() {
+            document.getElementsByClassName("container")[0].style.backgroundColor = "red";
+        }
+        function bgrviolet() {
+            document.getElementsByClassName("container")[0].style.backgroundColor = "violet";
+        }
+    </script>
+
+</body>
+</html>
